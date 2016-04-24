@@ -7,7 +7,7 @@
  * White: #FFFFFF;
  */
 body {
-	font-family: "Roboto";
+	font-family: sans-serif;
 	background-color: #ddd;
 	
 }
@@ -24,14 +24,19 @@ a:focus{
 	color:#124572;
 }
 
-.logo {
-	margin: 0;
+.gf-logo--container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gf-logo {
+	height: 280px;
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-}
-
-.logo > img {
-	width: 75%;
 }
 
 .staffbox {

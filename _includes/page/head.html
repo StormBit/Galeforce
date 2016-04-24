@@ -1,5 +1,6 @@
 <title>{{ site.title }}</title>
 <meta charset="utf-8">
 
+<script async deferred src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 {% capture css %}{% include assets/style.scss %}{% endcapture%}
 <style type="text/css">{{ css | scssify }}</style>
