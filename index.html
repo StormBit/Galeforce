@@ -164,12 +164,10 @@ layout: default
 
 
 	<div class="article article-odd">
-		<h1><a link="#rules"></a>Rules</h1>
-		<h3>These rules are not to be treated as the be-all-end-all rules for the whole entire service, as each game has its own code of conduct that will be shown when you join.</h3>
-		<h4>
-		Rule #1:&nbsp;&nbsp;Don't hack, cheat, or abuse known issues in the game.<br>
-		Rule #2:&nbsp;&nbsp;Respect your fellow players.<br>
-		Rule #3:&nbsp;&nbsp;Listen to the staff.<br>
-		</h4>
+          <h1><a link="#rules"></a>Rules</h1>
+          <h3>These rules are not to be treated as the be-all-end-all rules for the whole entire service, as each game has its own code of conduct that will be shown when you join.</h3>
+          <h4 class="gf-rules">
+            <ol>{% for rule in site.data.rules %}<li>{{ rule }}</li>{% endfor %}</ol>
+          </h4>
+        </div>
         <div class="clear"></div>
-	</div>

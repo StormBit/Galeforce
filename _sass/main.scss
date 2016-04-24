@@ -113,3 +113,17 @@ a:focus{
 	color: #FFF;
 	background-color: #124572;
 }
+
+
+.gf-rules {
+  ol {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0;
+  }
+  li:before {
+    content: 'Rule #' counter(item, decimal) ':';
+    counter-increment: item;
+    padding-right: .6em;
+  }
+}
