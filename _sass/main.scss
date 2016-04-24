@@ -1,27 +1,22 @@
-@import  "https://fonts.googleapis.com/css?family=Roboto";
-/**
- * Palette:
- * Dark grey: #3C3C3C
- * Light grey: #CCCCCC;
- * Blue: #124572;
- * White: #FFFFFF;
- */
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "palette";
+
 body {
 	font-family: sans-serif;
-	background-color: #ddd;
+	background-color: palette-color('grey');
 	
 }
 
 hr {
-	border: 0px #000 solid;
-	border-top: 1px #000 solid;
+	border: 0px palette-color('black') solid;
+	border-top: 1px palette-color('black') solid;
 }
 
 a,
 a:active,
 a:hover,
 a:focus{
-	color:#124572;
+	color: palette-color('primary');
 }
 
 .gf-logo--container {
@@ -37,6 +32,11 @@ a:focus{
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
+	fill: palette-color('dark-grey');
+}
+.gf-logo__motif,
+.gf-logo__force {
+	fill: palette-color('primary');
 }
 
 .staffbox {
@@ -65,12 +65,12 @@ a:focus{
 
 .staffbox > .name {
 	text-decoration: bold;
-	color: #124572;
+	color: palette-color('primary');
 }
 
 .staffbox > .position {
 	text-decoration: italic;
-	color: #3C3C3C;
+	color: palette-color('grey-dark');
 }
 
 .article-odd {
@@ -107,7 +107,7 @@ a:focus{
 .gf-navigation__item > a:focus,
 .gf-navigation__item > a:active {
 	text-decoration: none;
-	color: #3c3c3c;
+	color: palette-color('grey-dark');
 	padding: 20px;
 }
 
@@ -115,8 +115,8 @@ a:focus{
 .gf-navigation__item > a:focus,
 .gf-navigation__item > a:active {
 	text-decoration: bold;
-	color: #FFF;
-	background-color: #124572;
+	color: palette-color('white');
+	background-color: palette-color('primary');
 }
 
 
