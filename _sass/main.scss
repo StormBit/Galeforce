@@ -17,7 +17,10 @@ hr {
 	border-top: 1px #000 solid;
 }
 
-a,a:active,a:hover,a:focus{
+a,
+a:active,
+a:hover,
+a:focus{
 	color:#124572;
 }
 
@@ -27,7 +30,7 @@ a,a:active,a:hover,a:focus{
 	text-align: center;
 }
 
-.logo>img {
+.logo > img {
 	width: 75%;
 }
 
@@ -42,25 +45,25 @@ a,a:active,a:hover,a:focus{
 	font-size:100%;
 }
 
-.staffbox>.picture {
+.staffbox > .picture {
 	width: 128px;
 	height: 128px;
 	margin-right: 10px;
 	float:left;
 }
 
-.staffbox>.description {
+.staffbox > .description {
 	font-size: 70%;
 	text-decoration: none;
 	color: #111;
 }
 
-.staffbox>.name {
+.staffbox > .name {
 	text-decoration: bold;
 	color: #124572;
 }
 
-.staffbox>.position {
+.staffbox > .position {
 	text-decoration: italic;
 	color: #3C3C3C;
 }
@@ -78,7 +81,7 @@ a,a:active,a:hover,a:focus{
   clear:both;
 }
 
-.navigation {
+.gf-navigation {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -87,20 +90,25 @@ a,a:active,a:hover,a:focus{
 	list-style: none;
 }
 
-.navigation_item {
+.gf-navigation__item {
 	display: flex;
 	-webkit-justify-content: center;
 	justify-content: center;
 	align-items: center;
 }
 
-.navigation_item > a,.navigation_item > a:hover,.navigation_item > a:focus,.navigation_item > a:active {
+.gf-navigation__item > a,
+.gf-navigation__item > a:hover,
+.gf-navigation__item > a:focus,
+.gf-navigation__item > a:active {
 	text-decoration: none;
 	color: #3c3c3c;
 	padding: 20px;
 }
 
-.navigation_item > a:hover,.navigation_item > a:focus,.navigation_item > a:active {
+.gf-navigation__item > a:hover,
+.gf-navigation__item > a:focus,
+.gf-navigation__item > a:active {
 	text-decoration: bold;
 	color: #FFF;
 	background-color: #124572;
