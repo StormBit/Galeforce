@@ -1,3 +1,5 @@
 <title>{{ site.title }}</title>
 <meta charset="utf-8">
-<link href="./assets/css/style.css" rel="stylesheet">
+
+{% capture css %}{% include assets/style.scss %}{% endcapture%}
+<style type="text/css">{{ css | scssify }}</style>
