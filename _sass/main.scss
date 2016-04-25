@@ -1,10 +1,8 @@
-@import "https://fonts.googleapis.com/css?family=Roboto";
 @import "palette";
 
-body {
-	font-family: sans-serif;
-	background-color: palette-color('grey');
-	
+html, body {
+	font-family: Arial, sans-serif;
+	background-color: palette-color('grey');	
 }
 
 hr {
