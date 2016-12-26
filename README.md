@@ -1,1 +1,1 @@
-[Galeforce](http://galeforce.me/)
+# [GaleForce Main Site](https://galeforce.me/)
